@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/gamer-fitness/static/css/main.f855e6bc.css",
+    "main.js": "/gamer-fitness/static/js/main.40789919.js",
+    "static/js/453.a6b930fe.chunk.js": "/gamer-fitness/static/js/453.a6b930fe.chunk.js",
+    "static/media/logo.svg": "/gamer-fitness/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/gamer-fitness/index.html",
+    "main.f855e6bc.css.map": "/gamer-fitness/static/css/main.f855e6bc.css.map",
+    "main.40789919.js.map": "/gamer-fitness/static/js/main.40789919.js.map",
+    "453.a6b930fe.chunk.js.map": "/gamer-fitness/static/js/453.a6b930fe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.40789919.js"
+  ]
+}
