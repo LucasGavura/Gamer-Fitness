@@ -1,6 +1,8 @@
 /* src/components/Monitored.css */
 .monitored {
   padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 .workout-table {
