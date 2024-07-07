@@ -1,0 +1,16 @@
+/* src/components/HowToLift.css */
+.howtolift {
+    padding: 5rem 2rem;
+    background-color: #e0f7fa;
+  }
+  
+  .howtolift-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  .howtolift img {
+    max-width: 400px;
+    border-radius: 5px;
+  }
