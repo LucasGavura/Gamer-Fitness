@@ -4,18 +4,26 @@ import './Monitored.css';
 
 const Monitored = () => {
   return (
-    <section id="monitored" className="monitored">
-      <h2>Workout Progress</h2>
-      <div className="workout-form">
-        <input type="text" placeholder="Type" />
-        <input type="number" placeholder="Amount" />
-        <input type="number" placeholder="Weight" />
-        <input type="date" />
-      </div>
-      <div className="workout-data">
-        <p>The inputted data will be displayed in each of these rows</p>
-        <button>See Recommendations</button>
-      </div>
+    <section className="monitored">
+      <h2>Workout Information</h2>
+      <table className="workout-table">
+        <thead>
+          <tr>
+            <th>Exercise</th>
+            <th>Sets</th>
+            <th>Reps</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" placeholder="Exercise" /></td>
+            <td><input type="number" placeholder="Sets" /></td>
+            <td><input type="number" placeholder="Reps" /></td>
+            <td><input type="text" placeholder="Notes" /></td>
+          </tr>
+        </tbody>
+      </table>
     </section>
   );
 };

@@ -1,36 +1,28 @@
-/* src/components/WorkoutProgress.css */
-.workoutprogress {
-    padding: 5rem 2rem;
-    background-color: #c8e6c9;
-    text-align: center;
-  }
-  
-  .workout-form {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-  
-  .workout-form input {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .workout-data {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .workout-data button {
-    background-color: #4caf50;
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 1rem;
-  }
+/* src/components/Monitored.css */
+.monitored {
+  padding: 20px;
+}
+
+.workout-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.workout-table th,
+.workout-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.workout-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.workout-table input[type="text"],
+.workout-table input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
