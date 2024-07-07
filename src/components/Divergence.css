@@ -45,14 +45,39 @@
   background-color: #0056b3;
 }
 
-.more-options {
-  margin-top: 20px;
+.option-template {
+  margin-top: 10px;
 }
 
-.option-template {
-  background-color: #f1f1f1;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 10px;
-  margin-bottom: 10px;
+.option-template > div {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.option-template p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.option-template div div {
+  margin-top: 5px;
+  padding-left: 10px;
+  border-left: 2px solid #007bff;
+}
+
+.option-template div div p {
+  margin: 5px 0;
+}
+
+.option-template div div button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.option-template div div button:hover {
+  background-color: #218838;
 }
