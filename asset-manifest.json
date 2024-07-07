@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Gamer-Fitness/static/css/main.c9473030.css",
-    "main.js": "/Gamer-Fitness/static/js/main.7513559a.js",
+    "main.css": "/Gamer-Fitness/static/css/main.ae4837c7.css",
+    "main.js": "/Gamer-Fitness/static/js/main.761d2767.js",
     "static/js/453.a6b930fe.chunk.js": "/Gamer-Fitness/static/js/453.a6b930fe.chunk.js",
+    "static/media/Home.png": "/Gamer-Fitness/static/media/Home.fe98fa91dea3dc71ac0a.png",
     "index.html": "/Gamer-Fitness/index.html",
-    "main.c9473030.css.map": "/Gamer-Fitness/static/css/main.c9473030.css.map",
-    "main.7513559a.js.map": "/Gamer-Fitness/static/js/main.7513559a.js.map",
+    "main.ae4837c7.css.map": "/Gamer-Fitness/static/css/main.ae4837c7.css.map",
+    "main.761d2767.js.map": "/Gamer-Fitness/static/js/main.761d2767.js.map",
     "453.a6b930fe.chunk.js.map": "/Gamer-Fitness/static/js/453.a6b930fe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9473030.css",
-    "static/js/main.7513559a.js"
+    "static/css/main.ae4837c7.css",
+    "static/js/main.761d2767.js"
   ]
 }
