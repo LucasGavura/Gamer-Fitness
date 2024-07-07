@@ -5,17 +5,15 @@ import './Toggle.css';
 const Toggle = ({ isAnnual, setIsAnnual }) => {
   return (
     <div className="toggle-switch">
-      <input
-        type="checkbox"
-        id="toggle"
-        checked={isAnnual}
-        onChange={() => setIsAnnual(!isAnnual)}
-      />
-      <label htmlFor="toggle" className="toggle-label">
-        <span className="toggle-inner" />
-        <span className="toggle-switch" />
+      <label>
+        <input
+          type="checkbox"
+          checked={isAnnual}
+          onChange={() => setIsAnnual(!isAnnual)}
+        />
+        <span className="slider"></span>
+        {isAnnual ? 'Annual' : 'Monthly'}
       </label>
-      <span>{isAnnual ? 'Annual Plans' : 'Monthly Plans'}</span>
     </div>
   );
 };

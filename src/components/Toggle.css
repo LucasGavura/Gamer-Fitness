@@ -1,47 +1,39 @@
 /* src/components/Toggle.css */
 .toggle-switch {
-    display: flex;
-    align-items: center;
-  }
-  
-  .toggle-label {
-    position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
-    margin-right: 10px;
+    margin-bottom: 20px;
   }
   
-  .toggle-label input {
+  .toggle-switch input {
     display: none;
   }
   
-  .toggle-inner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  .slider {
+    position: relative;
+    cursor: pointer;
     background-color: #ccc;
     border-radius: 34px;
-    transition: background-color 0.3s;
+    transition: background-color 0.2s;
   }
   
-  .toggle-switch {
+  .slider::before {
+    content: "";
     position: absolute;
-    top: 4px;
-    left: 4px;
-    width: 26px;
     height: 26px;
+    width: 26px;
     background-color: white;
     border-radius: 50%;
-    transition: transform 0.3s;
+    bottom: 4px;
+    left: 4px;
+    transition: transform 0.2s;
   }
   
-  input:checked + .toggle-label .toggle-inner {
-    background-color: #4caf50;
+  input:checked + .slider {
+    background-color: #4CAF50;
   }
   
-  input:checked + .toggle-label .toggle-switch {
+  input:checked + .slider::before {
     transform: translateX(26px);
   }

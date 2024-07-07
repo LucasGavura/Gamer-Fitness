@@ -3,10 +3,15 @@ import React, { useState } from 'react';
 import './Monitored.css';
 
 const Monitored = () => {
-  const [rows, setRows] = useState([{ exercise: '', sets: '', reps: '', notes: '' }]);
+  const [rows, setRows] = useState([{ type: '', amount: '', weight: '', date: '' }]);
 
   const handleAddRow = () => {
-    setRows([...rows, { exercise: '', sets: '', reps: '', notes: '' }]);
+    setRows([...rows, { type: '', amount: '', weight: '', date: '' }]);
+  };
+
+  const handleDeleteRow = (index) => {
+    const newRows = rows.filter((_, rowIndex) => rowIndex !== index);
+    setRows(newRows);
   };
 
   const handleChange = (index, event) => {
@@ -22,19 +27,21 @@ const Monitored = () => {
       <table className="workout-table">
         <thead>
           <tr>
-            <th>Exercise</th>
-            <th>Sets</th>
-            <th>Reps</th>
-            <th>Notes</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Weight</th>
+            <th>Date</th>
+            <th>Delete</th>
           </tr>
         </thead>
         <tbody>
           {rows.map((row, index) => (
             <tr key={index}>
-              <td><input type="text" name="exercise" value={row.exercise} onChange={(e) => handleChange(index, e)} /></td>
-              <td><input type="number" name="sets" value={row.sets} onChange={(e) => handleChange(index, e)} /></td>
-              <td><input type="number" name="reps" value={row.reps} onChange={(e) => handleChange(index, e)} /></td>
-              <td><input type="text" name="notes" value={row.notes} onChange={(e) => handleChange(index, e)} /></td>
+              <td><input type="text" name="type" value={row.type} onChange={(e) => handleChange(index, e)} /></td>
+              <td><input type="number" name="amount" value={row.amount} onChange={(e) => handleChange(index, e)} /></td>
+              <td><input type="number" name="weight" value={row.weight} onChange={(e) => handleChange(index, e)} /></td>
+              <td><input type="date" name="date" value={row.date} onChange={(e) => handleChange(index, e)} /></td>
+              <td><button onClick={() => handleDeleteRow(index)} className="delete-row-btn">Delete</button></td>
             </tr>
           ))}
         </tbody>

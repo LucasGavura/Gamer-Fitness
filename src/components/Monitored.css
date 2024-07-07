@@ -21,7 +21,8 @@
 }
 
 .workout-table input[type="text"],
-.workout-table input[type="number"] {
+.workout-table input[type="number"],
+.workout-table input[type="date"] {
   width: 100%;
   padding: 5px;
   box-sizing: border-box;
@@ -39,4 +40,17 @@
 
 .add-row-btn:hover {
   background-color: #45a049;
+}
+
+.delete-row-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete-row-btn:hover {
+  background-color: #d32f2f;
 }
