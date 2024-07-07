@@ -5,7 +5,9 @@ import Home from './components/Home';
 import Divergence from './components/Divergence';
 import Absorb from './components/Absorb';
 import Monitored from './components/Monitored';
+import Organize from './components/Organize';
 import './App.css';
+
 
 function App() {
   return (
@@ -24,6 +26,9 @@ function App() {
       </div>
       <div className="container">
         <Monitored />
+      </div>
+      <div className="container">
+        <Organize />
       </div>
     </div>
   );
