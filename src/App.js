@@ -13,7 +13,6 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <main>
         <div className="container">
           <Navbar />
         </div>
@@ -32,7 +31,6 @@ function App() {
         <div className="container">
           <Organize />
         </div>
-      </main>
       <Chat />
     </div>
   );
