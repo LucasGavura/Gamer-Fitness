@@ -4,9 +4,9 @@ import './Divergence.css';
 import Toggle from './Toggle';
 
 const plans = [
-  { name: 'Workout', monthly: '$10/month', annual: '$100/year' },
-  { name: 'Exercise', monthly: '$5/month', annual: '$50/year' },
-  { name: 'Dieting', monthly: '$5/month', annual: '$50/year' },
+  { name: 'Workout', monthly: 'See fun activities to implement into your workouts', annual: 'See fun activities to implement into your workouts' },
+  { name: 'Exercise', monthly: 'See some games that can help do essential exercises', annual: 'See some games that can help do essential exercises' },
+  { name: 'Dieting', monthly: 'See what delicious meals you can make, while remaining healthy and fit', annual: 'See what delicious meals you can make, while remaining healthy and fit' },
 ];
 
 const options = ['More divergence options here', 'More divergence options here', 'More divergence options here'];

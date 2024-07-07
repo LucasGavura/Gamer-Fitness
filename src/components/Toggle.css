@@ -15,6 +15,7 @@
     cursor: pointer;
     background-color: #0c5027;
     border-radius: 34px;
+    margin-bottom: 30px;
     transition: background-color 0.2s;
   }
   
@@ -23,7 +24,7 @@
     position: absolute;
     height: 26px;
     width: 26px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
     bottom: 4px;
     left: 4px;
