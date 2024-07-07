@@ -12,8 +12,13 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <h1>My Fitness App</h1>
-      <button onClick={scrollToDivergence} className="divergence-button">Go to Plans</button>
+      <div className="navbar-logo">Gamer Fitness</div>
+      <ul className="navbar-links">
+        <li><a href="#divergence">Plans</a></li>
+        <li><a href="#absorb">Dieting</a></li>
+        <li><a href="#about">About Us</a></li>
+        <button onClick={scrollToDivergence} className="divergence-button">Go to Plans</button>
+      </ul>
     </nav>
   );
 };

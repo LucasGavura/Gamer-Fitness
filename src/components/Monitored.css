@@ -26,3 +26,17 @@
   padding: 5px;
   box-sizing: border-box;
 }
+
+.add-row-btn {
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-row-btn:hover {
+  background-color: #45a049;
+}

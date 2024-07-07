@@ -10,11 +10,21 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Home />
-      <Divergence />
-      <Absorb />
-      <Monitored />
+      <div className="container">
+        <Navbar />
+      </div>
+      <div className="container">
+        <Home />
+      </div>
+      <div className="container">
+        <Divergence />
+      </div>
+      <div className="container">
+        <Absorb />
+      </div>
+      <div className="container">
+        <Monitored />
+      </div>
     </div>
   );
 }

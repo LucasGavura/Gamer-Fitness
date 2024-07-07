@@ -45,38 +45,20 @@
   background-color: #0056b3;
 }
 
-.option-template {
+.dropdown-options {
   margin-top: 10px;
+  text-align: left;
 }
 
-.option-template > div {
-  margin-top: 10px;
+.dropdown-options div {
+  margin-bottom: 5px;
 }
 
-.option-template p {
-  margin: 0;
-  font-weight: bold;
+.dropdown-options a {
+  color: #007bff;
+  text-decoration: none;
 }
 
-.option-template div div {
-  margin-top: 5px;
-  padding-left: 10px;
-  border-left: 2px solid #007bff;
-}
-
-.option-template div div p {
-  margin: 5px 0;
-}
-
-.option-template div div button {
-  background-color: #28a745;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
-.option-template div div button:hover {
-  background-color: #218838;
+.dropdown-options a:hover {
+  text-decoration: underline;
 }
