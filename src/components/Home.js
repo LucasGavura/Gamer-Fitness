@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <section id="home" className="home" style={{ backgroundImage: `url(${homeImage})` }}>
       <h1>Your Journey Starts Here</h1>
-      <p>Welcome to Gamer Fitness...</p>
+      <p>Welcome to Gamer Fitness</p>
       <button className="home-button">Get Started</button>
     </section>
   );
