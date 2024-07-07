@@ -35,8 +35,10 @@
   background-color: #6a1b9a;
   border: none;
   cursor: pointer;
+  padding-right: 40px;
+  padding-left: 0px;
 }
 
 .navbar-links a:hover, .navbar-button:hover {
-  background-color: #555;
+  background-color: #6a3325;
 }

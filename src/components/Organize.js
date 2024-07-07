@@ -15,7 +15,7 @@ const Organize = () => {
   };
 
   return (
-    <section className="organize">
+    <section id="organize" className="organize">
       <h2>Goal</h2>
       <form onSubmit={handleSubmit}>
         <input

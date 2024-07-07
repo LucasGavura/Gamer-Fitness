@@ -15,9 +15,10 @@ const Navbar = () => {
       <div className="navbar-logo">Gamer Fitness</div>
       <ul className="navbar-links">
         <li><a href="#divergence">Our Plans</a></li>
-        <li><a href="#absorb">Track Workouts</a></li>
-        <li><a href="#about">About</a></li>
-        <li><button onClick={scrollToDivergence} className="divergence-button">Get Started</button></li>
+        <li><a href="#absorb">Learn More</a></li>
+        <li><a href="#monitor">Track Workouts</a></li>
+        <li><a href="#organize">Set Goals</a></li>
+        <li><button onClick={scrollToDivergence} className="navbar-button">Get Started</button></li>
       </ul>
     </nav>
   );

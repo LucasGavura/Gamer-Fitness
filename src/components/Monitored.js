@@ -22,7 +22,7 @@ const Monitored = () => {
   };
 
   return (
-    <section className="monitored">
+    <section id="monitor" className="monitored">
       <h2>Workout Information</h2>
       <table className="workout-table">
         <thead>
