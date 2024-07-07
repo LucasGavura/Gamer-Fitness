@@ -12,7 +12,7 @@ const Toggle = ({ isAnnual, setIsAnnual }) => {
           onChange={() => setIsAnnual(!isAnnual)}
         />
         <span className="slider"></span>
-        {isAnnual ? 'Annual' : 'Monthly'}
+        {isAnnual ? 'Annual Plans' : 'Monthly Plans'}
       </label>
     </div>
   );

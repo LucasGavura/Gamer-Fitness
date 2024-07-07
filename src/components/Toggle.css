@@ -13,7 +13,7 @@
   .slider {
     position: relative;
     cursor: pointer;
-    background-color: #ccc;
+    background-color: #0c5027;
     border-radius: 34px;
     transition: background-color 0.2s;
   }

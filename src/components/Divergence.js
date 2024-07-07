@@ -4,12 +4,12 @@ import './Divergence.css';
 import Toggle from './Toggle';
 
 const plans = [
-  { name: 'Basic', monthly: '$10/month', annual: '$100/year' },
-  { name: 'Pro', monthly: '$20/month', annual: '$200/year' },
-  { name: 'Premium', monthly: '$30/month', annual: '$300/year' },
+  { name: 'Workout', monthly: '$10/month', annual: '$100/year' },
+  { name: 'Exercise', monthly: '$5/month', annual: '$50/year' },
+  { name: 'Dieting', monthly: '$5/month', annual: '$50/year' },
 ];
 
-const options = ['Option 1', 'Option 2', 'Option 3'];
+const options = ['More divergence options here', 'More divergence options here', 'More divergence options here'];
 
 const Divergence = () => {
   const [isAnnual, setIsAnnual] = useState(false);
