@@ -3,10 +3,23 @@
 }
 
 .howtolift-content {
-  margin-top: 20px;
+  display: flex;
+  align-items: center;
 }
 
-.howtolift-content img {
+.text-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-content img {
   max-width: 100%;
   height: auto;
+  border-radius: 16px;
 }

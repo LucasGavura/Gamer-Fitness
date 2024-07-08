@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Divergence.css';
 import Toggle from './Toggle';
 import Modal from './Modal';
-import Absorb from './Absorb'; // Make sure the path to Absorb is correct
+import Absorb from './Absorb';
 
 const plans = [
   { name: 'Workout', monthly: 'See fun activities to implement into your workouts', annual: 'See fun activities to implement into your workouts' },
@@ -26,7 +26,7 @@ const Divergence = () => {
     if (option === 'How to Lift') {
       setModalContent(<Absorb />);
     } else {
-      setModalContent(<div>Content for {option}</div>); // Placeholder for other content
+      setModalContent(<div>Content for {option}</div>);
     }
     setIsModalOpen(true);
   };
