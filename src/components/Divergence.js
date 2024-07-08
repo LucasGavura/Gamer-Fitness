@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Divergence.css';
 import Toggle from './Toggle';
+import Modal from './Modal';
+import Absorb from './Absorb'; // Make sure the path to Absorb is correct
 
 const plans = [
   { name: 'Workout', monthly: 'See fun activities to implement into your workouts', annual: 'See fun activities to implement into your workouts' },
@@ -13,9 +15,25 @@ const options = ['How to Lift', 'More divergence options here', 'More divergence
 const Divergence = () => {
   const [isAnnual, setIsAnnual] = useState(false);
   const [activePlan, setActivePlan] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState(null);
 
   const handleToggleOptions = (planName) => {
     setActivePlan(activePlan === planName ? null : planName);
+  };
+
+  const handleOpenModal = (option) => {
+    if (option === 'How to Lift') {
+      setModalContent(<Absorb />);
+    } else {
+      setModalContent(<div>Content for {option}</div>); // Placeholder for other content
+    }
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setModalContent(null);
   };
 
   return (
@@ -32,7 +50,7 @@ const Divergence = () => {
               <div className="dropdown-options">
                 {options.map((option, index) => (
                   <div key={index}>
-                    <a href={`#${option.toLowerCase().replace(/ /g, '-')}`}>{option}</a>
+                    <a href="#!" onClick={() => handleOpenModal(option)}>{option}</a>
                   </div>
                 ))}
               </div>
@@ -40,6 +58,9 @@ const Divergence = () => {
           </div>
         ))}
       </div>
+      <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+        {modalContent}
+      </Modal>
     </section>
   );
 };
