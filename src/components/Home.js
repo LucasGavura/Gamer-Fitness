@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link as ScrollLink } from 'react-scroll';
 import './Home.css';
 import homeImage from '../images/Home.png';
 
