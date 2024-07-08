@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Divergence from './components/Divergence';
-import Absorb from './components/Absorb';
 import Monitored from './components/Monitored';
 import Organize from './components/Organize';
 import Chat from './components/Chat';
@@ -18,9 +17,6 @@ function App() {
       </div>
       <div className="container">
         <Divergence />
-      </div>
-      <div className="container">
-        <Absorb />
       </div>
       <div className="container">
         <Monitored />

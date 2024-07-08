@@ -8,7 +8,7 @@ const plans = [
   { name: 'Dieting', monthly: 'See what delicious meals you can make, while remaining healthy and fit', annual: 'See what delicious meals you can make, while remaining healthy and fit' },
 ];
 
-const options = ['More divergence options here', 'More divergence options here', 'More divergence options here'];
+const options = ['How to Lift', 'More divergence options here', 'More divergence options here'];
 
 const Divergence = () => {
   const [isAnnual, setIsAnnual] = useState(false);
@@ -32,7 +32,7 @@ const Divergence = () => {
               <div className="dropdown-options">
                 {options.map((option, index) => (
                   <div key={index}>
-                    <a href={`#${option.toLowerCase().replace(' ', '-')}`}>{option}</a>
+                    <a href={`#${option.toLowerCase().replace(/ /g, '-')}`}>{option}</a>
                   </div>
                 ))}
               </div>
