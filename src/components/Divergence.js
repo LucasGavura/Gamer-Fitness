@@ -1,4 +1,3 @@
-// src/components/Divergence.js
 import React, { useState } from 'react';
 import './Divergence.css';
 import Toggle from './Toggle';

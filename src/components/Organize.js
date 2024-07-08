@@ -1,4 +1,3 @@
-// src/components/Organize.js
 import React, { useState } from 'react';
 import './Organize.css';
 

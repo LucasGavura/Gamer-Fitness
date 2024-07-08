@@ -1,4 +1,3 @@
-// src/components/Absorb.js
 import React from 'react';
 import './Absorb.css';
 import absorbImage from '../images/Absorb.png';

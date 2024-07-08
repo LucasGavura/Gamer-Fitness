@@ -1,5 +1,5 @@
-// src/components/Home.js
 import React from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 import './Home.css';
 import homeImage from '../images/Home.png';
 
@@ -8,7 +8,9 @@ const Home = () => {
     <section id="home" className="home" style={{ backgroundImage: `url(${homeImage})` }}>
       <h1>Your Journey Starts Here</h1>
       <p>Welcome to Gamer Fitness</p>
-      <button className="home-button">Get Started</button>
+      <ScrollLink to="divergence" smooth={true} duration={500}>
+        <button className="home-button">Get Started</button>
+      </ScrollLink>
     </section>
   );
 };

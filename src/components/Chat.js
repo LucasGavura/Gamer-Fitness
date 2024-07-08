@@ -1,4 +1,3 @@
-// src/components/Chat.js
 import React, { useState } from 'react';
 import './Chat.css';
 
