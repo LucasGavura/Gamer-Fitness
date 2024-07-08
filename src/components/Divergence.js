@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
 import './Divergence.css';
 import Toggle from './Toggle';
 
@@ -14,16 +13,9 @@ const options = ['How to Lift', 'More divergence options here', 'More divergence
 const Divergence = () => {
   const [isAnnual, setIsAnnual] = useState(false);
   const [activePlan, setActivePlan] = useState(null);
-  const history = useHistory();
 
   const handleToggleOptions = (planName) => {
     setActivePlan(activePlan === planName ? null : planName);
-  };
-
-  const handleOptionClick = (option) => {
-    if (option === 'How to Lift') {
-      history.push('/how-to-lift');
-    }
   };
 
   return (
@@ -39,8 +31,8 @@ const Divergence = () => {
             {activePlan === plan.name && (
               <div className="dropdown-options">
                 {options.map((option, index) => (
-                  <div key={index} onClick={() => handleOptionClick(option)}>
-                    {option}
+                  <div key={index}>
+                    <a href={`#${option.toLowerCase().replace(/ /g, '-')}`}>{option}</a>
                   </div>
                 ))}
               </div>
