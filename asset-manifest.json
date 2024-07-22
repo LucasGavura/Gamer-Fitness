@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Gamer-Fitness/static/css/main.ba7ec929.css",
-    "main.js": "/Gamer-Fitness/static/js/main.c6693c3a.js",
+    "main.js": "/Gamer-Fitness/static/js/main.bef690e3.js",
     "static/js/453.a6b930fe.chunk.js": "/Gamer-Fitness/static/js/453.a6b930fe.chunk.js",
     "static/media/WorkA1.png": "/Gamer-Fitness/static/media/WorkA1.c06363a73b3ff1b94805.png",
     "static/media/DietA3.png": "/Gamer-Fitness/static/media/DietA3.fd221f42687f829dfb4c.png",
@@ -21,11 +21,11 @@
     "static/media/ExerciseM1.png": "/Gamer-Fitness/static/media/ExerciseM1.b797476d397d43282006.png",
     "index.html": "/Gamer-Fitness/index.html",
     "main.ba7ec929.css.map": "/Gamer-Fitness/static/css/main.ba7ec929.css.map",
-    "main.c6693c3a.js.map": "/Gamer-Fitness/static/js/main.c6693c3a.js.map",
+    "main.bef690e3.js.map": "/Gamer-Fitness/static/js/main.bef690e3.js.map",
     "453.a6b930fe.chunk.js.map": "/Gamer-Fitness/static/js/453.a6b930fe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ba7ec929.css",
-    "static/js/main.c6693c3a.js"
+    "static/js/main.bef690e3.js"
   ]
 }
