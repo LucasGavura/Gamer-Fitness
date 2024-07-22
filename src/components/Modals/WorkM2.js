@@ -10,6 +10,9 @@ const Absorb = () => {
       <div className="info-content">
         <div className="text-content">
           <p>
+            Same as the fitness Olympics but on a much smaller scale and with no competeting.
+            This is great for those who don't like the competitive aspects of the fitness Olympics
+             but still wish to participate in similar activites.
 
           </p>
         </div>

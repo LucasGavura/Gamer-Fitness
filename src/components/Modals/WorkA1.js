@@ -9,7 +9,9 @@ const Absorb = () => {
       <p>The Core workout of a lifetime</p>
       <div className="info-content">
         <div className="text-content">
-          <p>
+          <p> While it may be a frustrating game, it is a great workout for your core.
+            This game will have you climbing up a mountain with a hammer, and it will have you working up a sweat in no time.
+            As only your arms will be used to climb, it will be a great workout for your core.
 
           </p>
         </div>

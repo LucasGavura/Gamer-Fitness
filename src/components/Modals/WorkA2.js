@@ -9,7 +9,9 @@ const Absorb = () => {
       <p>Team based competition on who can improve the most in a year</p>
       <div className="info-content">
         <div className="text-content">
-          <p>
+          <p> Compete is a fitness challenge with other users, competeting in a friendly manner to push eachother
+             further to become the best version of themselves. This is a year long challenge, with monthly check-ins 
+             and is a favorite among our users.
 
           </p>
         </div>
