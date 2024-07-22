@@ -9,8 +9,9 @@ const Absorb = () => {
       <p>Who would've thought running for your life was this benficial</p>
       <div className="info-content">
         <div className="text-content">
-          <p>
-
+          <p>Dinosaurs are scary, but running from them is a great way to get your cardio in. 
+            This game is a great way to get your heart rate up and get a good workout in.
+            Fear is a great motivator, and this game will have you running for your life in no time.
           </p>
         </div>
         <div className="image-content">

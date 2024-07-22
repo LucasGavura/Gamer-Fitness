@@ -9,7 +9,9 @@ const Absorb = () => {
       <p>The all time classic</p>
       <div className="info-content">
         <div className="text-content">
-          <p>
+          <p> We've all played this one before. The Wii Fit is a classic game that has been around for years. 
+            The game has a variety of different exercises that you can do, from yoga to strength training. 
+            It's a great way to get moving and have fun at the same time with any sports imaginable.
 
           </p>
         </div>

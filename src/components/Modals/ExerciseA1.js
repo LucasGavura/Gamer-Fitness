@@ -9,7 +9,9 @@ const Absorb = () => {
       <p>How catching pokemon can lead to long term benefits</p>
       <div className="info-content">
         <div className="text-content">
-          <p>
+          <p>Walking around playing pokemon go will do wonders in the long run for your health. 
+            It is a fun way to get your exercise in and you can even do it with friends.
+            All while catching pokemon and getting to know your city better.
           </p>
         </div>
         <div className="image-content">

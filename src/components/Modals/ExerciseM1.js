@@ -9,8 +9,8 @@ const Absorb = () => {
       <p>Rythmically get that move on</p>
       <div className="info-content">
         <div className="text-content">
-          <p>
-
+          <p>Beat Saber is a VR rhythm game where you slash the beats of adrenaline-pumping music as they fly towards you,
+             surrounded by a futuristic world, your will be tired out in no time.
           </p>
         </div>
         <div className="image-content">
