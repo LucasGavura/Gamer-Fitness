@@ -1,3 +1,4 @@
+/* src/components/Monitored.css */
 .monitored {
   padding: 20px;
   margin: 0 auto;
@@ -54,4 +55,22 @@
 
 .delete-row-btn:hover {
   background-color: #d32f2f;
+}
+
+.export-btn {
+  margin-top: 10px;
+  background-color: #088839;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.export-btn:hover {
+  background-color: #088839;
+}
+
+.incomplete-row {
+  background-color: #bc1e1e;
 }

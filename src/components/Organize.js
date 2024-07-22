@@ -8,9 +8,18 @@ const Organize = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (goal.trim() !== '') {
-      setSubmittedGoals([...submittedGoals, goal]);
+      const newGoal = { text: goal, time: new Date().toLocaleString() };
+      setSubmittedGoals([...submittedGoals, newGoal]);
       setGoal('');
     }
+  };
+
+  const handleCheck = (index) => {
+    setTimeout(() => {
+      const newGoals = [...submittedGoals];
+      newGoals.splice(index, 1);
+      setSubmittedGoals(newGoals);
+    }, 100);
   };
 
   return (
@@ -24,11 +33,25 @@ const Organize = () => {
           placeholder="Enter your goal"
         />
         <button type="submit">Submit</button>
+        <ul className="filler-text">
+          <li>You can enter your goals here for your future self</li>
+          <li>The time you created them will be visible, so you can look back on your ambitions</li>
+          <li>Good luck in your fitness dreams!</li>
+        </ul>
       </form>
       <div className="goal-list">
-        {submittedGoals.map((g, index) => (
+        {submittedGoals.map((goal, index) => (
           <div key={index} className="goal-item">
-            {g}
+            <div className="goal-text">{goal.text}</div>
+            <div className="goal-info">
+              <span className="goal-time">{goal.time}</span>
+              <input
+                type="checkbox"
+                onChange={() => handleCheck(index)}
+                className="goal-checkbox"
+                checked={false}
+              />
+            </div>
           </div>
         ))}
       </div>

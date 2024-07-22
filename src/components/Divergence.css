@@ -2,9 +2,8 @@
   padding: 20px;
 }
 
-.toggle-switch {
-  margin-top: 50px;
-  margin-bottom: 50px;
+.toggle-container {
+  margin-bottom: 20px;
 }
 
 .pricing-cards {
@@ -19,8 +18,19 @@
   border-radius: 8px;
   padding: 20px;
   margin: 10px;
+  min-height: 150px;
   width: 250px;
   text-align: center;
+  position: relative;
+  transition: width 0.3s ease-in-out;
+}
+
+.plan-card.expanded {
+  max-width: 300px; 
+}
+
+.plan-details {
+  overflow: hidden; 
 }
 
 .plan-card h3 {
@@ -28,26 +38,31 @@
 }
 
 .plan-card p {
-  font-size: 1.2em;
+  font-size: 1em;
   margin-bottom: 20px;
 }
 
-.plan-card button {
-  background-color: #007bff;
+.select-button {
+  background-color: #065906;
   color: white;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.plan-card button:hover {
-  background-color: #0056b3;
+.select-button:hover {
+  background-color: #065906;
 }
 
 .dropdown-options {
-  margin-top: 10px;
-  text-align: left;
+  margin-bottom: 40px;
+  text-align: center;
+  padding-right: 10px;
 }
 
 .dropdown-options div {
@@ -55,7 +70,7 @@
 }
 
 .dropdown-options a {
-  color: #007bff;
+  color: #065906;
   text-decoration: none;
 }
 

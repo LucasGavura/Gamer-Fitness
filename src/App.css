@@ -3,9 +3,38 @@
   text-align: center;
 }
 
-.container {
-  padding: 20px;
+.container1 {
+  min-height: 600px;
+  padding: 10px;
   margin-bottom: 5px;
   border: 1px solid #ababab;
   border-radius: 2px;
+  background: url('images/Home.png') no-repeat center center/cover;
+}
+
+.container2 {
+  min-height: 600px;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ababab;
+  border-radius: 2px;
+  background-color: #b6f9c4;
+}
+
+.container3 {
+  min-height: 600px;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ababab;
+  border-radius: 2px;
+  background: url('images/Monitored.png') no-repeat center center/cover;
+}
+
+.container4 {
+  min-height: 600px;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ababab;
+  border-radius: 2px;
+  background: url('images/Organize.png') no-repeat center center/cover;
 }

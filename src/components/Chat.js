@@ -3,9 +3,22 @@ import './Chat.css';
 
 const Chat = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [messages, setMessages] = useState([{ sender: 'other', text: 'Hello! How can I help you today?' }]);
+  const [input, setInput] = useState('');
 
   const toggleChat = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleSend = () => {
+    if (input.trim() !== '') {
+      const newMessages = [...messages, { sender: 'user', text: input }];
+      setMessages(newMessages);
+      setInput('');
+      setTimeout(() => {
+        setMessages((prevMessages) => [...prevMessages, { sender: 'other', text: 'Thanks for your message!' }]);
+      }, 500);
+    }
   };
 
   return (
@@ -20,11 +33,20 @@ const Chat = () => {
             <button onClick={toggleChat} className="close-chat">✖</button>
           </div>
           <div className="chat-body">
-            <p>Welcome to the chat!</p>
+            {messages.map((message, index) => (
+              <p key={index} className={message.sender === 'user' ? 'user-message' : 'other-message'}>
+                {message.text}
+              </p>
+            ))}
           </div>
           <div className="chat-footer">
-            <input type="text" placeholder="Type a message..." />
-            <button>Send</button>
+            <input
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              placeholder="Type a message..."
+            />
+            <button onClick={handleSend}>Send</button>
           </div>
         </div>
       )}

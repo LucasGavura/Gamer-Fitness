@@ -3,6 +3,7 @@ import './Toggle.css';
 
 const Toggle = ({ isAnnual, setIsAnnual }) => {
   return (
+    <div className="rectangle">
     <div className="toggle-switch">
       <label>
         {isAnnual ? 'Annual Plans' : 'Monthly Plans'}
@@ -13,6 +14,7 @@ const Toggle = ({ isAnnual, setIsAnnual }) => {
         />
         <span className="slider"></span>
       </label>
+    </div>
     </div>
   );
 };

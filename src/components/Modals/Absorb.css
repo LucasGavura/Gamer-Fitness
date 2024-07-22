@@ -1,8 +1,8 @@
-.howtolift {
+.title {
   padding: 20px;
 }
 
-.howtolift-content {
+.info-content {
   display: flex;
   align-items: center;
 }
@@ -19,7 +19,7 @@
 }
 
 .image-content img {
-  max-width: 100%;
-  height: auto;
+  max-width: 400px;
+  height: 250px;
   border-radius: 16px;
 }
